@@ -1,0 +1,5453 @@
+#
+#
+#These Definitions were downloaded from the Internet.  No clue if they are functional or correct.
+#
+#
+#
+/* Not in 22DISK */
+BEGIN AxBIG  Amstrad ReadBIG - DS/DD 48 tpi 5.25" - 512 x 9 
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 1 65,66,67,68,69,70,71,72,73
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 355 DRM 127 AL0 0C0H  AL1 0 OFS 2
+END
+
+# AxBIG  Amstrad ReadBIG - DS/DD 48 tpi 5.25" - 512 x 9
+diskdef AxBIG
+  seclen 512
+  tracks 160
+  sectrk 9
+  secbase 65
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AxBIG]
+description = AxBIG  Amstrad ReadBIG - DS/DD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[AxBIG]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN ADx10  Amstrad RAMDOS D10 - DS/DD 48 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 17,18,19,20,21,22,23,24,25,26
+SIDE2 1 17,18,19,20,21,22,23,24,25,26
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 400 DRM 127 AL0 0C0H  AL1 0 OFS 0
+END
+
+# ADx10  Amstrad RAMDOS D10 - DS/DD 48 tpi 5.25" - 512 x 10
+diskdef ADx10
+  seclen 512
+  tracks 160
+  sectrk 10
+  secbase 17
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[ADx10]
+description = ADx10  Amstrad RAMDOS D10 - DS/DD 48 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 17
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx10]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 17
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN ADx20  Amstrad RAMDOS D20 - DS/DD 48 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 49,50,51,52,53,54,55,56,57,58
+SIDE2 1 49,50,51,52,53,54,55,56,57,58
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 400 DRM 255 AL0 0F0H  AL1 0 OFS 0
+END
+
+# ADx20  Amstrad RAMDOS D20 - DS/DD 48 tpi 5.25" - 512 x 10
+diskdef ADx20
+  seclen 512
+  tracks 160
+  sectrk 10
+  secbase 49
+  blocksize 2048
+  maxdir 256
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[ADx20]
+description = ADx20  Amstrad RAMDOS D20 - DS/DD 48 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 49
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 49
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN 168D  Amstrad PCW Joyce - 168 Track - DS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 84 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 187 DRM 255 AL0 0C0H AL1 0 OFS 1
+END
+
+# 168D  Amstrad PCW Joyce - 168 Track - DS/DD 48 tpi 5.25" - 512 x 9
+diskdef 168D
+  seclen 512
+  tracks 168
+  sectrk 9
+  blocksize 4096
+  maxdir 256
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[168D]
+description = 168D  Amstrad PCW Joyce - 168 Track - DS/DD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 168
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+
+# flashfloppy/GOTEK
+[168D]
+cyls = 168
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN CF2D  Amstrad PCW Joyce - CF2DD - DS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 356 DRM 255 AL0 0F0H AL1 0 OFS 1
+END
+
+# CF2D  Amstrad PCW Joyce - CF2DD - DS/DD 48 tpi 5.25" - 512 x 9
+diskdef CF2D
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[CF2D]
+description = CF2D  Amstrad PCW Joyce - CF2DD - DS/DD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[CF2D]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A175 PCW8xxx LW A (40*1* 9, 512 1 OFS 2k DIR) - SS/DD 48 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9
+BSH 3 BLM 7 EXM 0 DSM 174 DRM 63 AL0 0C0H AL1 0 OFS 1
+END
+
+# A175 PCW8xxx LW A (40*1* 9, 512 1 OFS 2k DIR) - SS/DD 48 tpi 3.5" - 512 x 9
+diskdef A175
+  seclen 512
+  tracks 40
+  sectrk 9
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[A175]
+description = A175 PCW8xxx LW A (40*1* 9, 512 1 OFS 2k DIR) - SS/DD 48 tpi 3.5" - 512 x 9
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[A175]
+cyls = 10
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A195 PCW8xxx LW A (40*1*10, 512 1 OFS 2k DIR) - SS/DD 48 tpi 3.5" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 10 512 SKEW 2 
+SIDE1 0 1,2,3,4,5,6,7,8,9,10 
+BSH 3 BLM 7 EXM 0 DSM 194 DRM 63 AL0 0C0H AL1 0 OFS 1
+END
+
+# A195 PCW8xxx LW A (40*1*10, 512 1 OFS 2k DIR) - SS/DD 48 tpi 3.5" - 512 x 10
+diskdef A195
+  seclen 512
+  tracks 40
+  sectrk 10
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[A195]
+description = A195 PCW8xxx LW A (40*1*10, 512 1 OFS 2k DIR) - SS/DD 48 tpi 3.5" - 512 x 10
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[A195]
+cyls = 40
+heads = 1
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A354 PCW8xxx LW B (40*2* 9, 512 1 OFS 8k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 176 DRM 255 AL0 240 AL1 0 OFS 1
+END
+
+# A354 PCW8xxx LW B (40*2* 9, 512 1 OFS 8k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+diskdef A354
+  seclen 512
+  tracks 80
+  sectrk 9
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[A354]
+description = A354 PCW8xxx LW B (40*2* 9, 512 1 OFS 8k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[A354]
+cyls = 80
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A360 PC1715 IBM & PCW8xxx (40*2* 9, 512 0 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 179 DRM 127 AL0 192 AL1 0 OFS 0
+END
+
+# A360 PC1715 IBM & PCW8xxx (40*2* 9, 512 0 OFS 4k DIR)- DS/DD 48 tpi 5.25" - 512 x 9
+diskdef A360
+  seclen 512
+  tracks 80
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[A360]
+description = A360 PC1715 IBM & PCW8xxx (40*2* 9, 512 0 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 80
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A394 PCW8xxx LW B (40*2*10, 512 1 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 42 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+SIDE2 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 206 DRM 127 AL0 192 AL1 0 OFS 1
+END
+
+# A394 PCW8xxx LW B (40*2*10, 512 1 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 10
+diskdef A394
+  seclen 512
+  tracks 84
+  sectrk 10
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[A394]
+description = A394 PCW8xxx LW B (40*2*10, 512 1 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 84
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+
+# flashfloppy/GOTEK
+[A394]
+cyls = 84
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A414 PCW8xxx LW B (42*2*10, 512 1 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 42 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+SIDE2 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 206 DRM 127 AL0 192 AL1 0 OFS 1
+END
+
+# A414 PCW8xxx LW B (42*2*10, 512 1 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 10
+diskdef A414
+  seclen 512
+  tracks 84
+  sectrk 10
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[A414]
+description = A414 PCW8xxx LW B (42*2*10, 512 1 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 84
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+
+# flashfloppy/GOTEK
+[A414]
+cyls = 84
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A720 PCW8xxx LW B (81*2* 9, 512 2 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 81 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 359 DRM 127 AL0 192 AL1 0 OFS 2
+END
+
+# A720 PCW8xxx LW B (81*2* 9, 512 2 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+diskdef A720
+  seclen 512
+  tracks 162
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[A720]
+description = A720 PCW8xxx LW B (81*2* 9, 512 2 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 162
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+
+# flashfloppy/GOTEK
+[A720]
+cyls = 162
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A780 PC1715 SCP   (80*2* 5 1024 4 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 389 DRM 127 AL0 192 AL1 0 OFS 4
+END
+
+# A780 PC1715 SCP   (80*2* 5 1024 4 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 1024 x 5
+diskdef A780
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[A780]
+description = A780 PC1715 SCP   (80*2* 5 1024 4 OFS 4k DIR) - DS/DD 48 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[A780]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN A800 PC1715 CPA   (80*2* 5 1024 0 OFS 6k DIR) - DS/DD 48 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 399 DRM 191 AL0 224 AL1 0 OFS 0
+END
+
+# A800 PC1715 CPA   (80*2* 5 1024 0 OFS 6k DIR) - DS/DD 48 tpi 5.25" - 1024 x 5
+diskdef A800
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 192
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[A800]
+description = A800 PC1715 CPA   (80*2* 5 1024 0 OFS 6k DIR) - DS/DD 48 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[A800]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN ABC2  ABC-24 - DSDD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 9 512
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+BSH 4 BLM 15 EXM 1 DSM 151 DRM 127 AL0 0C0H AL1 0 OFS 4
+END
+
+# ABC2  ABC-24 - DSDD 48 tpi 5.25" - 512 x 9
+diskdef ABC2
+  seclen 512
+  tracks 80
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[ABC2]
+description = ABC2  ABC-24 - DSDD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[ABC2]
+cyls = 80
+heads = 2
+secs = 9
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AD1  Amstrad CPC 178K Data Side 1 - SS/DD 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 193,194,195,196,197,198,199,200,201
+BSH 3 BLM 7 EXM 0 DSM 179 DRM 63 AL0 0c0H AL1 0 OFS 0
+END
+
+# AD1  Amstrad CPC 178K Data Side 1 - SS/DD 3.5" - 512 x 9
+diskdef AD1
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 193
+  blocksize 1024
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[AD1]
+description = AD1  Amstrad CPC 178K Data Side - SS/DD 3.5" - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 193
+datarate = DD
+
+# flashfloppy/GOTEK
+[AD1]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AD2  Amstrad CPC 178K Data Side 2 - DS/DD 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 193,194,195,196,197,198,199,200,201
+SIDE2 0 193,194,195,196,197,198,199,200,201
+ORDER EAGLE
+BSH 3 BLM 7 EXM 0 DSM 179 DRM 63 AL0 0C0H AL1 0 OFS 80
+END
+
+# AD2  Amstrad CPC 178K Data Side 2 - DS/DD 3.5" - 512 x 9
+diskdef AD2
+  seclen 512
+  tracks 160
+  sectrk 9
+  secbase 193
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 80
+  os 2.2
+end
+
+# libdsk
+[AD2]
+description = AD2  Amstrad CPC 178K Data Side 2 - DS/DD 3.5" - 512 x 9
+sides = eagle
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 193
+datarate = DD
+
+# flashfloppy/GOTEK
+[AD2]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AD1b  Amstrad CPC 178K Data Side 1 - SS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 193,194,195,196,197,198,199,200,201
+BSH 3 BLM 7 EXM 0 DSM 179 DRM 63 AL0 0c0H AL1 0 OFS 0
+END
+
+# AD1b  Amstrad CPC 178K Data Side 1 - SS/DD 48 tpi 5.25" - 512 x 9
+diskdef AD1b
+  seclen 512
+  tracks 40
+  sectrk 9
+  secbase 193
+  blocksize 1024
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[AD1b]
+description = AD1b  Amstrad CPC 178K Data Side 1 - SS/DD 48 tpi 5.25" - 512 x 9
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 193
+datarate = DD
+
+# flashfloppy/GOTEK
+[AD1b]
+cyls = 40
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AD2b  Amstrad CPC 178K Data Side 2 - DS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 193,194,195,196,197,198,199,200,201
+SIDE2 0 193,194,195,196,197,198,199,200,201
+ORDER EAGLE
+BSH 3 BLM 7 EXM 0 DSM 179 DRM 63 AL0 0C0H AL1 0 OFS 40
+END
+
+# AD2b  Amstrad CPC 178K Data Side 2 - DS/DD 48 tpi 5.25" - 512 x 9
+diskdef AD2b
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 193
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 40
+  os 2.2
+end
+
+# libdsk
+[AD2b]
+description = AD2b  Amstrad CPC 178K Data Side 2 - DS/DD 48 tpi 5.25" - 512 x 9
+sides = eagle
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 193
+datarate = DD
+
+# flashfloppy/GOTEK
+[AD2b]
+cyls = 80
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AI1  Amstrad CPC 154K IBM CP/M-86 - SS/DD 48 tpi 5.25" - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 8 512
+SIDE1 0 1,2,3,4,5,6,7,8
+BSH 3 BLM 7 EXM 0 DSM 155 DRM 63 AL0 0C0H AL1 0 OFS 1
+END
+
+# AI1  Amstrad CPC 154K IBM CP/M-86 SSDD Side 1 - SS/DD 48 tpi 5.25" - 512 x 8
+diskdef AI1
+  seclen 512
+  tracks 80
+  sectrk 8
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[AI1]
+description = AI1  Amstrad CPC 154K IBM CP/M-86 SSDD Side 1 - SS/DD 48 tpi 5.25" - 512 x 8
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[AI1]
+cyls = 80
+heads = 1
+secs = 8
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AI2  Amstrad CPC 154K IBM CP/M-86 DS/DD 48 tpi 5.25" - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 8 512
+SIDE1 0 1,2,3,4,5,6,7,8
+SIDE2 0 1,2,3,4,5,6,7,8
+ORDER EAGLE
+BSH 3 BLM 7 EXM 0 DSM 155 DRM 63 AL0 0C0H AL1 0 OFS 41
+END
+
+# AI2  Amstrad CPC 154K IBM CP/M-86 DS/DD 48 tpi 5.25" - 512 x 8
+diskdef AI2
+  seclen 512
+  tracks 160
+  sectrk 8
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 41
+  os 2.2
+end
+
+# libdsk
+[AI2]
+description = AI2  Amstrad CPC 154K IBM CP/M-86 DS/DD 48 tpi 5.25" - 512 x 8
+sides = eagle
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[AI2]
+cyls = 160
+heads = 2
+secs = 8
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSD CPC Data40   (40*1* 9, 512 0 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 9 512 SKEW 2 
+SIDE1 0 193,198,194,199,195,200,196,201,197 
+BSH 3 BLM 7 EXM 0 DSM 179 DRM 63 AL0 0C0H AL1 0 OFS 0
+END
+
+# AMSD CPC Data40   (40*1* 9, 512 0 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+diskdef AMSD
+  seclen 512
+  tracks 40
+  sectrk 9
+  secbase 193
+  blocksize 1024
+  maxdir 64
+  skew 5
+  os 2.2
+end
+
+# libdsk
+[AMSD]
+description = AMSD CPC Data40   (40*1* 9, 512 0 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 193
+datarate = DD
+
+# flashfloppy/GOTEK
+[AMSD]
+cyls = 40
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSE CPC Data80   (80*1* 9, 512 0 OFS 4k DIR) - SS/DD 48 tpi 5.25" - 512 x 9 
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 81,82,83,84,85,86,87,88,89
+BSH 4 BLM 15 EXM 2 DSM 178 DRM 127 AL0 0C0H AL1 0 OFS 0
+END
+
+# AMSE CPC Data80   (80*1* 9, 512 0 OFS 4k DIR) - SS/DD 48 tpi 5.25" - 512 x 9 
+diskdef AMSE
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 81
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[AMSE]
+description = AMSE CPC Data80   (80*1* 9, 512 0 OFS 4k DIR) - SS/DD 48 tpi 5.25" - 512 x 9 
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 81
+datarate = DD
+
+# flashfloppy/GOTEK
+[AMSE]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 81
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSS CPC System40 (40*1* 9, 512 2 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 3 BLM 7 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# AMSS CPC System40 (40*1* 9, 512 2 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+diskdef AMSS
+  seclen 512
+  tracks 40
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMSS]
+description = AMSS CPC System40 (40*1* 9, 512 2 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 40
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSL  Amstrad 360K Brieschal - SS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 81,82,83,84,85,86,87,88,89
+BSH 4 BLM 15 EXM 2 DSM 178 DRM 127 AL0 0C0H AL1 0 OFS 0
+END
+
+# AMSL  Amstrad 360K Brieschal - SS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMSL
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 81
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[AMSL]
+description = AMSL  Amstrad 360K Brieschal - SS/DD 96 tpi 5.25" - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 81
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 81
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSM  CPC Data40   (40*1* 9, 512 0 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 9 512 SKEW 2 
+SIDE1 0 193,198,194,199,195,200,196,201,197 
+BSH 3 BLM 7 EXM 0 DSM 179 DRM 63 AL0 0C0H AL1 0 OFS 0
+END
+
+# AMSM  CPC Data40   (40*1* 9, 512 0 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+diskdef AMSM
+  seclen 512
+  tracks 40
+  sectrk 9
+  secbase 193
+  blocksize 1024
+  maxdir 64
+  skew 5
+  os 2.2
+end
+
+# libdsk
+[AMSM]
+description = AMSM  CPC Data40   (40*1* 9, 512 0 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 193
+datarate = DD
+
+# flashfloppy/GOTEK
+[AMSM]
+cyls = 40
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSN  CPC System80 (80*1* 9, 512 2 OFS 2k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 4 BLM 15 EXM 1 DSM 174 DRM 63 AL0 080H AL1 0 OFS 2
+END
+
+# AMSN  CPC System80 (80*1* 9, 512 2 OFS 2k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMSN
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 65
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMSN]
+description = AMSN  CPC System80 (80*1* 9, 512 2 OFS 2k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[AMSN]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSO  CPC Data80   (80*1* 9, 512 0 OFS 4k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 81,82,83,84,85,86,87,88,89
+BSH 4 BLM 15 EXM 2 DSM 178 DRM 127 AL0 0C0H AL1 0 OFS 0
+END
+
+# AMSO  CPC Data80   (80*1* 9, 512 0 OFS 4k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMSO
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 81
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[AMSO]
+description = AMSO  CPC Data80   (80*1* 9, 512 0 OFS 4k DIR) - SS/DD 96 tpi 5.25" - 512 x 9 
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 81
+datarate = DD
+
+# flashfloppy/GOTEK
+[AMSO]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 81
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSP  CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 1 65,66,67,68,69,70,71,72,73
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 176 DRM 127 AL0 080H AL1 0 OFS 2
+END
+
+# AMSP  CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMSP
+  seclen 512
+  tracks 160
+  sectrk 9
+  secbase 65
+  blocksize 4096
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMSP]
+description = AMSP  CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[AMSP]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSQ  CPC System40 (40*1* 9, 512 2 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 3 BLM 7 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# AMSQ  CPC System40 (40*1* 9, 512 2 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+diskdef AMSQ
+  seclen 512
+  tracks 40
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMSQ]
+description = AMSQ  CPC System40 (40*1* 9, 512 2 OFS 2k DIR) - SS/DD 48 tpi 5.25" - 512 x 9
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[AMSQ]
+cyls = 40
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSR  CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 1 65,66,67,68,69,70,71,72,73
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 176 DRM 127 AL0 080H AL1 0 OFS 2
+END
+
+# AMSR  CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMSR
+  seclen 512
+  tracks 160
+  sectrk 9
+  secbase 65
+  blocksize 4096
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMSR]
+description = AMSR  CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSS  VORTEX       (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 176 DRM 127 AL0 080H AL1 0 OFS 2
+END
+
+# AMSS  VORTEX       (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMSS
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 4096
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMSS]
+description = AMSS  VORTEX       (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMST CPC System80 (80*1* 9, 512 2 OFS 2k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 4 BLM 15 EXM 1 DSM 174 DRM 63 AL0 080H AL1 0 OFS 2
+END
+
+# AMST CPC System80 (80*1* 9, 512 2 OFS 2k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMST
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 65
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMST]
+description = AMST CPC System80 (80*1* 9, 512 2 OFS 2k DIR) - SS/DD 96 tpi 5.25" - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AMSU CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 1 65,66,67,68,69,70,71,72,73
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 176 DRM 127 AL0 080H AL1 0 OFS 2
+END
+
+# AMSU CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+diskdef AMSU
+  seclen 512
+  tracks 160
+  sectrk 9
+  secbase 65
+  blocksize 4096
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AMSU]
+description = AMSU CPC SystemD  (80*2* 9, 512 2 OFS 4k DIR) - DS/DD 96 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AP1  Amstrad CPC 830K-DiskPara-Format - DS/DD 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 83 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+SIDE2 0 11,12,13,14,15,16,17,18,19,20
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 414 DRM 191 AL0 224 AL1 0 OFS 0
+END
+
+# AP1  Amstrad CPC 830K-DiskPara-Format - DS/DD 96 tpi 5.25" - 512 x 10
+diskdef AP1
+  seclen 512
+  tracks 83
+  sectrk 10
+  blocksize 2048
+  maxdir 192
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[AP1]
+description = AP1  Amstrad CPC 830K-DiskPara-Format - DS/DD 96 tpi 5.25" - 512 x 10
+sides = extsurface
+cylinders = 83
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+
+# flashfloppy/GOTEK
+[AP1]
+cyls = 166
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AP2  Amstrad CPC DiskPara 3-Format - DS/DD 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+SIDE2 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 399 DRM 127 AL0 0C0H AL1 0 OFS 0
+END
+
+# AP2  Amstrad CPC DiskPara 3-Format - DS/DD 96 tpi 5.25" - 512 x 10
+diskdef AP2
+  seclen 512
+  tracks 160
+  sectrk 10
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[AP2]
+description = AP2  Amstrad CPC DiskPara 3-Format - DS/DD 96 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[AP2]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AS1  Amstrad CPC 169K System Side 1 - DS/DD 96 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 3 BLM 7 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# AS1  Amstrad CPC 169K System Side - DS/DD 96 tpi 3.5" - 512 x 9
+diskdef AS1
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AS1]
+description = AS1  Amstrad CPC 169K System Side 1 - DS/DD 96 tpi 3.5" - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[AS1]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AS2  Amstrad CPC 169K System Side 2  - DS/DD 96 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 0 65,66,67,68,69,70,71,72,73
+ORDER EAGLE
+BSH 3 BLM 7 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 82
+END
+
+# AS2  Amstrad CPC 169K System Side 2 - DS/DD 96 tpi 3.5" - 512 x 9
+diskdef AS2
+  seclen 512
+  tracks 160
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 82
+  os 2.2
+end
+
+# libdsk
+[AS2]
+description = AS2  Amstrad CPC 169K System Side 2 - DS/DD 96 tpi 3.5" - 512 x 9
+sides = eagle
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[AS2]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AS1b  Amstrad CPC 169K System Side 1 - SS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 3 BLM 7 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# AS1b  Amstrad CPC 169K System Side 1 - SS/DD 48 tpi 5.25" - 512 x 9
+diskdef AS1b
+  seclen 512
+  tracks 40
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AS1b]
+description = AS1b  Amstrad CPC 169K System Side 1 - SS/DD 48 tpi 5.25" - 512 x 9
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[AS1b]
+cyls = 40
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AS2b  Amstrad CPC 169K System Side 2 - DS/DD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 0 65,66,67,68,69,70,71,72,73
+ORDER EAGLE
+BSH 3 BLM 7 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 42
+END
+
+# AS2b  Amstrad CPC 169K System Side 2 - DS/DD 48 tpi 5.25" - 512 x 9
+diskdef AS2b
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 42
+  os 2.2
+end
+
+# libdsk
+[AS2b]
+description = AS2b  Amstrad CPC 169K System Side 2 - DS/DD 48 tpi 5.25" - 512 x 9
+sides = eagle
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 80
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AS3  Amstrad CPC 249K System 53 tracks Side 1 - SS/DD 96 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 106 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 3 BLM 7 EXM 0 DSM 250 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# AS3  Amstrad CPC 249K System 53 tracks Side 1 - SS/DD 96 tpi 3.5" - 512 x 9
+diskdef AS3
+  seclen 512
+  tracks 106
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[AS3]
+description = AS3  Amstrad CPC 249K System 53 tracks Side 1 - SS/DD 96 tpi 3.5" - 512 x 9
+cylinders = 106
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 106
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN AS4  Amstrad CPC 249K System 53 tracks Side 2 - DS/DD 96 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 106 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 0 65,66,67,68,69,70,71,72,73
+ORDER EAGLE
+BSH 3 BLM 7 EXM 0 DSM 250 DRM 63 AL0 0C0H AL1 0 OFS 108
+END
+
+# AS4  Amstrad CPC 249K System 53 tracks Side 2 - DS/DD 96 tpi 3.5" - 512 x 9
+diskdef AS4
+  seclen 512
+  tracks 212
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 108
+  os 2.2
+end
+
+# libdsk
+[AS4]
+description = AS4  Amstrad CPC 249K System 53 tracks Side 2 - DS/DD 96 tpi 3.5" - 512 x 9
+sides = eagle
+cylinders = 212
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+
+# flashfloppy/GOTEK
+[AS4]
+cyls = 212
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MAX3 MAX - DS/HD 96 tpi 3.5" - 1024 x 11
+DENSITY MFM HIGH
+CYLINDERS 80 SIDES 2 SECTORS 11 1024 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11
+SIDE2 1 1,2,3,4,5,6,7,8,9,10,11
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 879 DRM 255 AL0 240 AL1 0 OFS 0
+END
+
+# MAX3 MAX 3.5" - 1024 x 11
+diskdef MAX3
+  seclen 1024
+  tracks 160
+  sectrk 11
+  blocksize 2048
+  maxdir 256
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[MAX3]
+description = MAX3 MAX 3.5" - 1024 x 11
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 11
+secbase = 1
+datarate = HD
+
+# flashfloppy/GOTEK
+[MAX3]
+cyls = 160
+heads = 2
+secs = 11
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SF2D  Amstrad PCW Joyce - SF2DD - DS/DD 96 tpi 3.5" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 84 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+SIDE2 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 208 DRM 255  AL0 0C0H AL1 0  OFS 1
+END
+
+# SF2D  Amstrad PCW Joyce - SF2DD - DS/DD 96 tpi 3.5" - 512 x 10
+diskdef SF2D
+  seclen 512
+  tracks 168
+  sectrk 10
+  blocksize 4096
+  maxdir 256
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[SF2D]
+description = SF2D  Amstrad PCW Joyce - SF2DD - DS/DD 96 tpi 3.5" - 512 x 10
+sides = alt
+cylinders = 168
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+
+# flashfloppy/GOTEK
+[SF2D]
+cyls = 168
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN BPB2  BPBIOS - HD 135 tpi - DS/HD 135 tpi 3.5" - 1024 x 11
+DENSITY MFM HIGH 
+CYLINDERS 80 SIDES 2 SECTORS 11 1024
+SIDE1 0 65,66,67,68,69,70,71,72,73,74,75
+SIDE2 1 65,66,67,68,69,70,71,72,73,74,75
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 873 DRM 255 AL0 0F0H AL1 0 OFS 1
+END
+
+# BPB2  BPBIOS - HD 135 tpi - DS/HD 135 tpi 3.5" - 1024 x 11
+diskdef BPB2
+  seclen 1024
+  tracks 160
+  sectrk 11
+  secbase 65
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[BPB2]
+description = BPB2  BPBIOS - HD 135 tpi - DS/HD 135 tpi 3.5" - 1024 x 11
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 11
+secbase = 65
+datarate = HD
+
+# flashfloppy/GOTEK
+[BPB2]
+cyls = 160
+heads = 2
+secs = 11
+interleave = 2
+bps = 1024
+id = 5
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN CAN1  Canon AS100 Testformat DSDD 5.25"  CP/M86 - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 8 512
+SIDE1 0 1,4,3,6,5,8,7,2
+SIDE2 1 1,4,3,6,5,8,7,2
+ORDER SIDES
+BSH 4 BLM 15 EXM 1 DSM 139 DRM 127 AL0 080H AL1 0 OFS 4
+END
+
+# CAN1  Canon AS100 Testformat DSDD 5.25  CP/M86 - 512 x 8
+diskdef CAN1
+  seclen 512
+  tracks 160
+  sectrk 8
+  blocksize 2048
+  maxdir 128
+  skew 3
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[CAN1]
+description = CAN1  Canon AS100 Testformat DSDD 5.25  CP/M86 - 512 x 8
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[CAN1]
+cyls = 160
+heads = 2
+secs = 8
+interleave = 3
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN CMX  CMX EDIT SYSTEM - DSDD 96 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 350 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# CMX  CMX EDIT SYSTEM - DSDD 96 tpi 3.5" - 512 x 9
+diskdef CMX
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[CMX]
+description = CMX  CMX EDIT SYSTEM - DSDD 96 tpi 3.5" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[CMX]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN COMA  C128 Juggler MG1581 - DSQD 96 tpi 3.5" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512
+SIDE2 0 1,2,3,4,5,6,7,8,9,10
+SIDE1 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 390 DRM 127 AL0 0C0H AL1 0 OFS 4
+END
+
+# COMA  C128 Juggler MG1581 - DSQD 96 tpi 3.5" -512 x 10
+diskdef COMA
+  seclen 512
+  tracks 160
+  sectrk 10
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[COMA]
+description = COMA  C128 Juggler MG1581 - DSQD 96 tpi 3.5" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[COMA]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN COMB  C128 Juggler Maxi 1581 - DSQD 96 tpi 3.5" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE2 0 1,2,3,4,5
+SIDE1 1 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 400 DRM 127 AL0 0C0H AL1 0 OFS 0
+END
+
+# COMB  C128 Juggler Maxi 1581 - DSQD 96 tpi 3.5" - 1024 x 5
+diskdef COMB
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[COMB]
+description = COMB  C128 Juggler Maxi 1581 - DSQD 96 tpi 3.5" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[COMB]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 1
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN COMC  C128 native CP/M DSQD 3.5" Only OK for first half of disk!!!
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512
+SIDE2 0 1,2,3,4,5,6,7,8,9,10
+SIDE1 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 390 DRM 127 AL0 0C0H AL1 0 OFS 0
+END
+
+# COMC  C128 native CP/M DSQD 3.5" Only OK for first half of disk!!!
+diskdef COMC
+  seclen 512
+  tracks 160
+  sectrk 10
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[COMC]
+description = COMC  C128 native CP/M DSQD 3.5" Only OK for first half of disk!!!
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[COMC]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN COM4  Compupro (Viasyn) (1024 bytes/sector) - DSDD 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE1 0 1,3,5,2,4
+SIDE2 1 1,3,5,2,4
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 389 DRM 255 AL0 0F0H AL1 0 OFS 4
+END
+
+# COM4  Compupro (Viasyn) (1024 bytes/sector) - DSDD 96 tpi 5.25" - 1024 x 5
+diskdef COM4
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 256
+  skew 2
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[COM4]
+description = COM4  Compupro (Viasyn) (1024 bytes/sector) - DSDD 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[COM4]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 1
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN CPC2  Amstrad CPC 'D20' - DSDD 96 tpi 3.5" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512
+SIDE1 0 49,50,51,52,53,54,55,56,57,58
+SIDE2 1 49,50,51,52,53,54,55,56,57,58
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 399 DRM 255 AL0 0F0H AL1 0 OFS 0
+END
+
+# CPC2  Amstrad CPC 'D20' - DSDD 96 tpi 3.5" - 512 x 10
+diskdef CPC2
+  seclen 512
+  tracks 160
+  sectrk 10
+  secbase 49
+  blocksize 2048
+  maxdir 256
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[CPC2]
+description = CPC2  Amstrad CPC 'D20' - DSDD 96 tpi 3.5" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 49
+datarate = DD
+
+# flashfloppy/GOTEK
+[CPC2]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 1
+bps = 512
+id = 49
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN D1   Romdos 716k Data (5.25") - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 359 DRM 127 AL0 0C0H AL1 0 OFS 0
+END
+
+# D1   Romdos 716k Data (5.25") - 512 x 9
+diskdef D1
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[D1]
+description = D1   Romdos 716k Data (5.25") - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[D1]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN EC70  ECMA-70 MC-C/PM (10x256) - SSDD 48 tpi 5.25" - 256 x 10
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 10 256
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 3 BLM 7 EXM 00 DSM 143 DRM 63 AL0 0C0H AL1 0 OFS 4
+END
+
+# EC70  ECMA-70 MC-C/PM (10x256) - SSDD 48 tpi 5.25" - 256 x 10
+diskdef EC70
+  seclen 256
+  tracks 40
+  sectrk 10
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[EC70]
+description = EC70  ECMA-70 MC-C/PM (10x256) - SSDD 48 tpi 5.25" - 256 x 10
+sides = alt
+cylinders = 40
+heads = 1
+secsize = 256
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[EC70]
+cyls = 40
+heads = 1
+secs = 10
+interleave = 1
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN GEN2 Genie III (CP/M 2.2C) Quad Density 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 0,1,2,3,4,5,6,7,8,9
+SIDE2 1 0,1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 389 DRM 191 AL0 0E0H AL1 0 OFS 4
+END
+
+# GEN2 Genie III (CP/M 2.2C) Quad Density 96 tpi 5.25" - 512 x 10
+diskdef GEN2
+  seclen 512
+  tracks 160
+  sectrk 10
+  secbase 0
+  blocksize 2048
+  maxdir 192
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[GEN2]
+description = GEN2 Genie III (CP/M 2.2C) Quad Density 96 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 0
+datarate = DD
+
+# flashfloppy/GOTEK
+[GEN2]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 0
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN GEN3 Genie IIIs (Kempf) Quad Density 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024 SKEW 3
+SIDE1 0 0,1,2,3,4
+SIDE2 1 0,1,2,3,4
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 389 DRM 191 AL0 0E0H AL1 0 OFS 2
+END
+
+# GEN3 Genie IIIs (Kempf) Quad Density 96 tpi 5.25" - 1024 x 5
+diskdef GEN3
+  seclen 1024
+  tracks 160
+  sectrk 5
+  secbase 0
+  blocksize 2048
+  maxdir 192
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[GEN3]
+description = GEN3 Genie IIIs (Kempf) Quad Density 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 0
+datarate = DD
+
+# flashfloppy/GOTEK
+[GEN3]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 2
+bps = 1024
+id = 0
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN HP1   Hewlett-Packard HP 86, 87, 125 - DSDD 48 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 16 256 SKEW 4
+SIDE1 0 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+SIDE2 1 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+ORDER SIDES
+BSH 3 BLM 7 EXM 0 DSM 251 DRM 127 AL0 0F0H AL1 0 OFS 3
+END
+
+# HP1   Hewlett-Packard HP 86, 87, 125 - DSDD 48 tpi 5.25" - 256 x 16
+diskdef HP1
+  seclen 256
+  tracks 80
+  sectrk 16
+  secbase 0
+  blocksize 1024
+  maxdir 128
+  skew 1
+  boottrk 3
+  os 2.2
+end
+
+# libdsk
+[HP1]
+description = HP1   Hewlett-Packard HP 86, 87, 125 - DSDD 48 tpi 5.25" - 256 x 16
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 256
+sectors = 16
+secbase = 0
+datarate = DD
+
+# flashfloppy/GOTEK
+[HP1]
+cyls = 80
+heads = 2
+secs = 16
+interleave = 4
+bps = 256
+id = 0
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN IBM3  IBM PC, CP/M DSDD 48 tpi 5.25" - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 8 512
+SIDE1 0 1,2,3,4,5,6,7,8
+SIDE2 1 1,2,3,4,5,6,7,8
+ORDER CYLINDERS
+BSH 4 BLM 15 EXM 0 DSM 157 DRM 63 AL0 080H AL1 0 OFS 0
+END
+
+# IBM3  IBM PC, CP/M DSDD 48 tpi 5.25" - 512 x 8
+diskdef IBM3
+  seclen 512
+  tracks 80
+  sectrk 8
+  blocksize 2048
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[IBM3]
+description = IBM3  IBM PC, CP/M DSDD 48 tpi 5.25" - 512 x 8
+sides = outback
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[IBM3]
+cyls = 80
+heads = 2
+secs = 8
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN IBM4 IBM-PC, CP/M-86 320 KB on DSDD 96 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER CYLINDERS
+BSH 4 BLM 15 EXM 1 DSM 157 DRM 63 AL0 080H AL1 0 OFS 1
+END
+
+# IBM4 IBM-PC, CP/M-86 320 KB on DSDD 96 tpi 3.5" - 512 x 9
+diskdef IBM4
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[IBM4]
+description = IBM4 IBM-PC, CP/M-86 320 KB on DSDD 96 tpi 3.5" - 512 x 9
+sides = outback
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[IBM4]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN IBM6  IBM PC, CP/M-86 - 720 KB - DSDD 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER CYLINDERS 
+BSH 4 BLM 15 EXM 0 DSM 354 DRM 255 AL0 0F0h AL1 0 OFS 2
+END
+
+# IBM6  IBM PC, CP/M-86 - 720 KB - DSDD 3.5" - 512 x 9
+diskdef IBM6
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[IBM6]
+description = IBM6  IBM PC, CP/M-86 - 720 KB - DSDD 3.5" - 512 x 9
+sides = outback
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[IBM6]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN ITT3     ITT3030  CP/M 2.2 DSDD 96 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 16 256
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+SIDE2 1 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 271 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# ITT3     ITT3030  CP/M 2.2 DSDD 96 tpi 5.25" - 256 x 16
+diskdef ITT3
+  seclen 256
+  tracks 160
+  sectrk 16
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[ITT3]
+description = ITT3     ITT3030  CP/M 2.2 DSDD 96 tpi 5.25" - 256 x 16
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[ITT3]
+cyls = 160
+heads = 2
+secs = 16
+interleave = 1
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN JUK1  Janich & Klaas - DSHD 3.5" 135 tpi -1024 x 11
+DENSITY MFM HIGH
+CYLINDERS 80 SIDES 2 SECTORS 11 1024
+SIDE1 0 1,3,5,7,9,11,2,4,6,8,10
+SIDE2 1 1,3,5,7,9,11,2,4,6,8,10
+ORDER SIDES
+BSH 5 BLM 31 EXM 1 DSM 436 DRM 255 AL0 0F0H AL1 00H OFS 1
+END
+
+# JUK1  Janich & Klaas - DSHD 3.5" 135 tpi -1024 x 11
+diskdef JUK1
+  seclen 1024
+  tracks 160
+  sectrk 11
+  blocksize 4096
+  maxdir 256
+  skew 2
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[JUK1]
+description = JUK1  Janich & Klaas - DSHD 3.5" 135 tpi -1024 x 11
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 11
+secbase = 1
+datarate = HD
+
+# flashfloppy/GOTEK
+[JUK1]
+cyls = 160
+heads = 2
+secs = 11
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN KC10  Koebler CP/M - SSDD 48 tpi 5.25" - 512 x 10
+DENSITY MFM LOW COMPLEMENT
+CYLINDERS 40 SIDES 1 SECTORS 10 512
+SIDE1 0 1,3,5,7,9,2,4,6,8,10
+BSH 4 BLM 15 EXM 1 DSM 94 DRM 63 AL0 080H AL1 0 OFS 2
+END
+
+# KC10  Koebler CP/M - SSDD 48 tpi 5.25" - 512 x 10
+diskdef KC10
+  seclen 512
+  tracks 40
+  sectrk 10
+  blocksize 2048
+  maxdir 64
+  skew 2
+  boottrk 2
+# data should be complmented
+# libdsk doesn't do that yet
+  os 2.2
+end
+
+# libdsk
+[KC10]
+description = KC10  Koebler CP/M - SSDD 48 tpi 5.25" - 512 x 10
+cylinders = 40
+heads = 1
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[KC10]
+cyls = 40
+heads = 1
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN KC85  KC85-MicroDOS-Systemdisk DSDD 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 389 DRM 127 AL0 0C0H AL1 00H OFS 4
+END
+
+# KC85  KC85-MicroDOS-Systemdisk DSDD 96 tpi 5.25" - 1024 x 5
+diskdef KC85
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[KC85]
+description = KC85  KC85-MicroDOS-Systemdisk DSDD 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[KC85]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN KCS1  KC Compact 169K System Format - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 3 BLM 7 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 0
+END
+
+# KCS1  KC Compact 169K System Format - 512 x 9
+diskdef KCS1
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[KCS1]
+description = KCS1  KC Compact 169K System Format - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+datarate = DD
+
+# flashfloppy/GOTEK
+[KCS1]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN KCD1  KC Compact 178K Data Format - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 193,194,195,196,197,198,199,200,201
+BSH 3 BLM 7 EXM 0 DSM 179 DRM 63 AL0 0C0H AL1 0 OFS 0
+END
+
+# KCD1  KC Compact 178K Data Format - 512 x 9
+diskdef KCD1
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 193
+  blocksize 1024
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[KCD1]
+description = KCD1  KC Compact 178K Data Format - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 193
+datarate = DD
+
+# flashfloppy/GOTEK
+[KCD1]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN KON2  Kontron - DSDD 40 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 16 256
+SIDE1 0 1,4,7,10,13,16,3,6,9,12,15,2,5,8,11,14
+SIDE2 1 1,4,7,10,13,16,3,6,9,12,15,2,5,8,11,14
+ORDER CYLINDERS
+BSH 4 BLM 15 EXM 0 DSM 399 DRM 127 AL0 0F0H AL1 0 OFS 4
+END
+
+# KON2  Kontron - DSDD 40 tpi 5.25" - 256 x 16
+diskdef KON2
+  seclen 256
+  tracks 160
+  sectrk 16
+  blocksize 2048
+  maxdir 128
+  skew 3
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[KON2]
+description = KON2  Kontron - DSDD 40 tpi 5.25" - 256 x 16
+sides = outback
+cylinders = 160
+heads = 2
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[KON2]
+cyls = 160
+heads = 2
+secs = 16
+interleave = 3
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN LNW2 LNW2(V3,256 BYTES/SECTOR) - DSDD 96tpi 5.25" - 256 x 18
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 18 256
+SIDE 1 0 1,6,11,16,3,8,13,18,5,10,15,2,7,12,17,4,9,14
+SIDE 2 1 1,6,11,16,3,8,13,18,5,10,15,2,7,12,17,4,9,14
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 350 DRM 127 AL0 0C0H AL1 0 OFS 4
+END
+
+# LNW2 LNW2(V3,256 BYTES/SECTOR) - DSDD 96tpi 5.25" - 256 x 18
+diskdef LNW2
+  seclen 256
+  tracks 160
+  sectrk 18
+  secbase 0
+  blocksize 2048
+  maxdir 128
+  skew 0
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[LNW2]
+description = LNW2 LNW2(V3,256 BYTES/SECTOR) - DSDD 96tpi 5.25" - 256 x 18
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 256
+sectors = 18
+secbase = 0
+datarate = DD
+
+# flashfloppy/GOTEK
+[LNW2]
+cyls = 160
+heads = 2
+secs = 18
+interleave = 5
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MAD1  Amstrad CPC 253K 56 pistes System Side 1 - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 114 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+BSH 3 BLM 7 EXM 0 DSM 254 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# MAD1  Amstrad CPC 253K 56 pistes System Side 1 - 512 x 9
+diskdef MAD1
+  seclen 512
+  tracks 114
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[MAD1]
+description = MAD1  Amstrad CPC 253K 56 pistes System Side 1 - 512 x 9
+cylinders = 114
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+
+# flashfloppy/GOTEK
+[MAD1]
+cyls = 114
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MAD2  Amstrad CPC 253K 56 pistes System Side 2 - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 114 SIDES 2 SECTORS 9 512 SKEW 2
+SIDE1 0 65,66,67,68,69,70,71,72,73
+SIDE2 0 65,66,67,68,69,70,71,72,73
+ORDER EAGLE
+BSH 3 BLM 7 EXM 0 DSM 254 DRM 63 AL0 0C0H AL1 0 OFS 116
+END
+
+# MAD2  Amstrad CPC 253K 56 pistes System Side 2 - 512 x 9
+diskdef MAD2
+  seclen 512
+  tracks 228
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 116
+  os 2.2
+end
+
+# libdsk
+[MAD2]
+description = MAD2  Amstrad CPC 253K 56 pistes System Side 2 - 512 x 9
+sides = eagle
+cylinders = 228
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 65
+
+# flashfloppy/GOTEK
+[MAD2]
+cyls = 228
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MADD  Amstrad CPC MADRAM 249K System 53 tracks Side 1 - 512 x 9
+#note only DD 3.5" and 5.25" drive
+DENSITY MFM LOW
+CYLINDERS 106 SIDES 1 SECTORS 9 512 SKEW 2
+SIDE1 0 65,70,66,71,67,72,68,73,69
+BSH 3 BLM 7 EXM 0 DSM 250 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# MADD  Amstrad CPC MADRAM 249K System 53 tracks Side 1 - 512 x 9
+diskdef MADD
+  seclen 512
+  tracks 106
+  sectrk 9
+  secbase 65
+  blocksize 1024
+  maxdir 64
+  skew 5
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[MADD]
+description = MADD  Amstrad CPC MADRAM 249K System 53 tracks Side 1 - 512 x 9
+cylinders = 106
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 65
+
+# flashfloppy/GOTEK
+[MADD]
+cyls = 106
+heads = 1
+secs = 9
+interleave = 2
+bps = 512
+id = 65
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MAG1 MAGIC DOS from longshot (Serge Querne) 2x410Ko DSDD side 1 - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 82 SIDES 1 SECTORS 10 512 SKEW 2
+SIDE1 0 193,194,195,196,197,198,199,200,201,202
+ORDER CYLINDERS
+BSH 4 BLM 15 EXM 1 DSM 204 DRM 63 AL0 080H AL1 0 OFS 0
+END
+
+# MAG1 MAGIC DOS from longshot (Serge Querne) 2x410Ko DSDD side 1 - 512 x 10
+diskdef MAG1
+  seclen 512
+  tracks 82
+  sectrk 10
+  secbase 193
+  blocksize 2048
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[MAG1]
+description = MAG1 MAGIC DOS from longshot (Serge Querne) 2x410Ko DSDD side 1 - 512 x 10
+sides = outback
+cylinders = 82
+heads = 1
+secsize = 512
+sectors = 10
+secbase = 193
+
+# flashfloppy/GOTEK
+[MAG1]
+cyls = 82
+heads = 1
+secs = 10
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MAG2 MAGIC DOS from longshot (Serge Querne) 2x410Ko DSDD side 2 - 512 x 10
+#note side 2 works now
+DENSITY MFM LOW
+CYLINDERS 82 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 193,194,195,196,197,198,199,200,201,202
+SIDE2 0 193,194,195,196,197,198,199,200,201,202
+#note
+#SIDE2 0 193,198,194,199,195,200,196,201,197,202
+ORDER EAGLE
+BSH 4 BLM 15 EXM 1 DSM 204 DRM 63 AL0 80H AL1 0 OFS 82
+END
+
+# MAG2 MAGIC DOS from longshot (Serge Querne) 2x410Ko DSDD side 2 - 512 x 10
+diskdef MAG2
+  seclen 512
+  tracks 164
+  sectrk 10
+  secbase 193
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 82
+  os 2.2
+end
+
+# libdsk
+[MAG2]
+description = MAG2 MAGIC DOS from longshot (Serge Querne) 2x410Ko DSDD side 2 - 512 x 10
+sides = eagle
+cylinders = 164
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 193
+
+# flashfloppy/GOTEK
+[MAG2]
+cyls = 164
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 193
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MAX3 MAX 3.5" - 1024 x 11
+DENSITY MFM HIGH
+CYLINDERS 80 SIDES 2 SECTORS 11 1024 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11
+SIDE2 1 1,2,3,4,5,6,7,8,9,10,11
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 879 DRM 255 AL0 240 AL1 0 OFS 0
+END
+
+# MAX3 MAX 3.5" - 1024 x 11
+diskdef MAX3
+  seclen 1024
+  tracks 160
+  sectrk 11
+  blocksize 2048
+  maxdir 256
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[MAX3]
+description = MAX3 MAX 3.5" - 1024 x 11
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 11
+secbase = 1
+datarate = HD
+
+# flashfloppy/GOTEK
+[MAX3]
+cyls = 160
+heads = 2
+secs = 11
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MIC2  Micromint SB180 - DSDD 48 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 17,18,19,20,21,22,23,24,25,26
+SIDE2 1 17,18,19,20,21,22,23,24,25,26
+ORDER SIDES
+BSH 4 BLM 15 EXM 1 DSM 194 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# MIC2  Micromint SB180 - DSDD 48 tpi 5.25" - 512 x 10
+diskdef MIC2
+  seclen 512
+  tracks 80
+  sectrk 10
+  secbase 17
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[MIC2]
+description = MIC2  Micromint SB180 - DSDD 48 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 17
+datarate = DD
+
+# flashfloppy/GOTEK
+[MIC2]
+cyls = 80
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 17
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MIC3  Micron Quark - DSDD 48 tpi 5.25" - 1024 x 4
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 4 1024
+SIDE1 0 1,2,3,4
+SIDE2 1 1,2,3,4
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 155 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# MIC3  Micron Quark - DSDD 48 tpi 5.25" - 1024 x 4
+diskdef MIC3
+  seclen 1024
+  tracks 80
+  sectrk 4
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[MIC3]
+description = MIC3  Micron Quark - DSDD 48 tpi 5.25" - 1024 x 4
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 1024
+sectors = 4
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[MIC3]
+cyls = 80
+heads = 2
+secs = 4
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MMDS  Nokia MikroMikko 1 - DSDD 96 tpi 5.25" - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 8 512
+SIDE1 0 1,4,7,2,5,8,3,6
+SIDE2 1 1,4,7,2,5,8,3,6
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 315 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# MMDS  Nokia MikroMikko 1 - DSDD 96 tpi 5.25" - 512 x 8
+diskdef MMDS
+  seclen 512
+  tracks 160
+  sectrk 8
+  blocksize 2048
+  maxdir 128
+  skew 3
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[MMDS]
+description = MMDS  Nokia MikroMikko 1 - DSDD 96 tpi 5.25" - 512 x 8
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[MMDS]
+cyls = 160
+heads = 2
+secs = 8
+interleave = 3
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MMSS  Nokia MikroMikko 1 - SSDD 96 tpi 5.25" - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 8 512
+SIDE1 0 1,4,7,2,5,8,3,6
+ORDER SIDES
+BSH 4 BLM 15 EXM 1 DSM 155 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# MMSS  Nokia MikroMikko 1 - SSDD 96 tpi 5.25" - 512 x 8
+diskdef MMSS
+  seclen 512
+  tracks 80
+  sectrk 8
+  blocksize 2048
+  maxdir 128
+  skew 3
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[MMSS]
+description = MMSS  Nokia MikroMikko 1 - SSDD 96 tpi 5.25" - 512 x 8
+sides = alt
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[MMSS]
+cyls = 80
+heads = 1
+secs = 10
+interleave = 3
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MOR7 Morrow QUAD Density 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE1 0 1,4,2,5,3
+SIDE2 1 1,4,2,5,3
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 196 DRM 191 AL0 0C0H AL1 0 OFS 2
+END
+
+# MOR7 Morrow QUAD Density 96 tpi 5.25" - 1024 x 5
+diskdef MOR7
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 4096
+  maxdir 192
+  skew 3
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[MOR7]
+description = MOR7 Morrow QUAD Density 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[MOR7]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 3
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN MYA1  MYARC TEST FORMAT - DSSD 48 tpi 3.5" - 256 x 9
+DENSITY FM LOW
+CYLINDERS 40 SIDES 2 SECTORS 9 256 SKEW 4
+SIDE1 0 1,8,6,4,2,0,7,5,3
+SIDE2 1 1,8,6,4,2,0,7,5,3
+BSH 4 BLM 15 EXM 0 DSM 177 DRM 63 AL0 0C0H AL1 0 OFS 0
+END
+
+# MYA1  MYARC TEST FORMAT - DSSD 48 tpi 3.5" - 256 x 9
+diskdef MYA1
+  seclen 256
+  tracks 80
+  sectrk 9
+  blocksize 2048
+  maxdir 64
+  skew 7
+  os 2.2
+end
+
+# libdsk
+[MYA1]
+description = MYA1  MYARC TEST FORMAT - DSSD 48 tpi 3.5" - 256 x 9
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 256
+sectors = 9
+secbase = 1
+datarate = SD
+
+# flashfloppy/GOTEK
+[MYA1]
+cyls = 80
+heads = 2
+secs = 9
+interleave = 4
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN NADS  Gemini/Nascom  - DSDD 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512
+SIDE1 0 0,1,2,3,4,5,6,7,8,9
+SIDE2 1 0,1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 392 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# NADS  Gemini/Nascom  - DSDD 96 tpi 5.25" - 512 x 10
+diskdef NADS
+  seclen 512
+  tracks 160
+  sectrk 10
+  secbase 0
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[NADS]
+description = NADS  Gemini/Nascom  - DSDD 96 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 0
+datarate = DD
+
+# flashfloppy/GOTEK
+[NADS]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 1
+bps = 512
+id = 0
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN NASC  NASCOM C - DSDD 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+SIDE2 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 394 DRM 255 AL0 0F0H AL1 0H OFS 2
+END
+
+# NASC  NASCOM C - DSDD 96 tpi 5.25" - 512 x 10
+diskdef NASC
+  seclen 512
+  tracks 160
+  sectrk 10
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[NASC]
+description = NASC  NASCOM C - DSDD 96 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[NASC]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN NDR1  MC-FLO2  - DSDD 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER CYLINDERS
+BSH 4 BLM 15 EXM 0 DSM 389 DRM 255 AL0 0F0H AL1 0 OFS 4
+END
+
+# NDR1  MC-FLO2  - DSDD 96 tpi 5.25" - 1024 x 5
+diskdef NDR1
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[NDR1]
+description = NDR1  MC-FLO2  - DSDD 96 tpi 5.25" - 1024 x 5
+sides = outback
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[NDR1]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN NEC3  NEC PC 8801A/8831A - DSDD 48 tpi 5.25" - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 8 512 SKEW 3
+SIDE1 0 1,2,3,4,5,6,7,8
+SIDE2 1 1,2,3,4,5,6,7,8
+ORDER SIDES
+BSH 4 BLM 15 EXM 1 DSM 152 DRM 127 AL0 0C0H AL1 0 OFS 4
+END
+
+# NEC3  NEC PC 8801A/8831A - DSDD 48 tpi 5.25" - 512 x 8
+diskdef NEC3
+  seclen 512
+  tracks 80
+  sectrk 8
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[NEC3]
+description = NEC3  NEC PC 8801A/8831A - DSDD 48 tpi 5.25" - 512 x 8
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[NEC3]
+cyls = 80
+heads = 2
+secs = 8
+interleave = 3
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN OET1  Oettle & Reichl  - DSDD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 3
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 176 DRM 127 AL0 080H AL1 0 OFS 2
+END
+
+# OET1  Oettle & Reichl  - DSDD 96 tpi 5.25" - 512 x 9
+diskdef OET1
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 4096
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[OET1]
+description = OET1  Oettle & Reichl  - DSDD 96 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[OET1]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 3
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN OET2  Oettle & Reichl  - DSDD 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 195 DRM 127 AL0 080H AL1 0 OFS 4
+END
+
+# OET2  Oettle & Reichl  - DSDD 96 tpi 5.25" - 1024 x 5
+diskdef OET2
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 4096
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[OET2]
+description = OET2  Oettle & Reichl  - DSDD 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[OET2]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 1
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN OLI4 Olivetti ET-112 -   3.5" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 16 256
+SIDE1 0 1,3,5,7,9,11,13,15,2,4,6,8,10,12,14,16
+BSH 4 BLM 15 EXM 1 DSM 157 DRM 63 AL0 080H AL1 0 OFS 2
+END
+
+# OLI4 Olivetti ET-112 -   3.5" - 256 x 16
+diskdef OLI4
+  seclen 256
+  tracks 80
+  sectrk 16
+  blocksize 2048
+  maxdir 64
+  skew 2
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[OLI4]
+description = OLI4 Olivetti ET-112 -   3.5" - 256 x 16
+cylinders = 80
+heads = 1
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[OKI4]
+cyls = 80
+heads = 1
+secs = 16
+interleave = 2
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN OLY3  Olympia ETX 1 (256 bytes/sector) - SSDD 48 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 16 256
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+BSH 3 BLM 7 EXM 0 DSM 154 DRM 63 AL0 0C0H AL1 0 OFS 0
+END
+
+# OLY3  Olympia ETX 1 (256 bytes/sector) - SSDD 48 tpi 5.25" - 256 x 16
+diskdef OLY3
+  seclen 256
+  tracks 40
+  sectrk 16
+  blocksize 1024
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[OLY3]
+description = OLY3  Olympia ETX 1 (256 bytes/sector) - SSDD 48 tpi 5.25" - 256 x 16
+cylinders = 40
+heads = 1
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[OLY3]
+cyls = 40
+heads = 1
+secs = 16
+interleave = 1
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN OLY4  Olympia ETX 1 (16x256 bytes/sector) - SSDD 48 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 16 256 SKEW 3
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+BSH 3 BLM 7 EXM 0 DSM 154 DRM 63 AL0 080H AL1 0 OFS 0
+END
+
+# OLY4  Olympia ETX 1 (16x256 bytes/sector) - SSDD 48 tpi 5.25" - 256 x 16
+diskdef OLY4
+  seclen 256
+  tracks 80
+  sectrk 16
+  blocksize 1024
+  maxdir 64
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[OLY4]
+description = OLY4  Olympia ETX 1 (16x256 bytes/sector) - SSDD 48 tpi 5.25" - 256 x 16
+cylinders = 80
+heads = 1
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[OLY4]
+cyls = 80
+heads = 1
+secs = 16
+interleave = 3
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN OLY5  Olympia People (16x256 / 2K 128 Dir) - DSDD 96 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 16 256 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+SIDE2 1 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+BSH 4 BLM 15 EXM 0 DSM 315 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# OLY5  Olympia People (16x256 / 2K 128 Dir) - DSDD 96 tpi 5.25" - 256 x 16
+diskdef OLY5
+  seclen 256
+  tracks 160
+  sectrk 16
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[OLY5]
+description = OLY5  Olympia People (16x256 / 2K 128 Dir) - DSDD 96 tpi 5.25" - 256 x 16
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[OLY5]
+cyls = 160
+heads = 2
+secs = 16
+interleave = 2
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN OSB9  Osborne Vixen - DSDD 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 392 DRM 255 AL0 0F0H AL1 0 OFS 6
+END
+
+# OSB9  Osborne Vixen - DSDD 96 tpi 5.25" - 1024 x 5
+diskdef OSB9
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 6
+  os 2.2
+end
+
+# libdsk
+[OSB9]
+description = OSB9  Osborne Vixen - DSDD 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[OSB9]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 1
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN PAR1  PARTNER - CP/M 86 DS HD 96 tpi 5.25" - 1024 x 8
+DENSITY MFM HIGH
+CYLINDERS 80 SIDES 2 SECTORS 8 1024
+SIDE1 0 1,2,3,4,5,6,7,8
+SIDE2 1 1,2,3,4,5,6,7,8
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 315 DRM 63 AL0 080H AL1 0 OFS 4
+END
+
+# PAR1  PARTNER - CP/M 86 DS HD 96 tpi 5.25" - 1024 x 8
+diskdef PAR1
+  seclen 1024
+  tracks 160
+  sectrk 8
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[PAR1]
+description = PAR1  PARTNER - CP/M 86 DS HD 96 tpi 5.25" - 1024 x 8
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 8
+secbase = 1
+datarate = HD
+
+# flashfloppy/GOTEK
+[PAR1]
+cyls = 160
+heads = 2
+secs = 8
+interleave = 1
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN PCPM  IBM PC, PCP/M-86 - DSDD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 350 DRM 127 AL0 0C0H AL1 0 OFS 4
+END
+
+# PCPM  IBM PC, PCP/M-86 - DSDD 96 tpi 5.25" - 512 x 9
+diskdef PCPM
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[PCPM]
+description = PCPM  IBM PC, PCP/M-86 - DSDD 96 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[PCPM]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN PRO2  Proglas 770KB - DSDD 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512 SKEW 2
+SIDE1 0 1,2,3,4,5,6,7,8,9,10
+SIDE2 1 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 388 DRM 255 AL0 0F0H AL1 0 OFS 4
+END
+
+# libdsk
+[PRO2]
+description = PRO2  Proglas 770KB - DSDD 96 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[PRO2]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN PRO4  Prof80 - IV- DSDD 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 10 512
+SIDE1 0 1,3,5,7,9,2,4,6,8,10
+SIDE2 1 1,3,5,7,9,2,4,6,8,10
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 384 DRM 127 AL0 0C0H AL1 0 OFS 6
+END
+
+# PRO4  Prof80 - IV- DSDD 96 tpi 5.25" - 512 x 10
+diskdef PRO4
+  seclen 512
+  tracks 160
+  sectrk 10
+  blocksize 2048
+  maxdir 128
+  skew 2
+  boottrk 6
+  os 2.2
+end
+
+# libdsk
+[PRO4]
+description = PRO4  Prof80 - IV- DSDD 96 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[PRO4]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN RC01 RC-702 Piccolo - DSDD 48 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 36 SIDES 2 SECTORS 9 512
+SIDE1 0 1,3,5,7,9,2,4,6,8
+SIDE2 1 1,3,5,7,9,2,4,6,8
+ORDER SIDES
+BSH 4 BLM 15 EXM 1 DSM 134 DRM 127 AL0 0C0H AL1 0 OFS 4
+END
+
+# RC01 RC-702 Piccolo - DSDD 48 tpi 5.25" - 512 x 9
+diskdef RC01
+  seclen 512
+  tracks 72
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 2
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[RC01]
+description = RC01 RC-702 Piccolo - DSDD 48 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 72
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+
+# flashfloppy/GOTEK
+[RC01]
+cyls = 72
+heads = 2
+secs = 9
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN REH1  REH CPU280  5x1024 - DSDD 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE1 0 1,3,5,2,4
+SIDE2 1 1,3,5,2,4
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 399 DRM 255 AL0 0F0H AL1 0 OFS 0
+END
+
+# REH1  REH CPU280  5x1024 - DSDD 96 tpi 5.25" - 1024 x 5
+diskdef REH1
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 256
+  skew 2
+  os 2.2
+end
+
+# libdsk
+[REH1]
+description = REH1  REH CPU280  5x1024 - DSDD 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[REH1]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN REH2  REH CPU280  9x1024 - HD 96 tpi 5.25" - 1024 x 9
+DENSITY MFM HIGH
+CYLINDERS 80 SIDES 2 SECTORS 9 1024 SKEW 2
+SIDE1 0 1,3,5,7,9,2,4,6,8
+SIDE2 1 1,3,5,7,9,2,4,6,8
+ORDER SIDES
+BSH 5 BLM 31 EXM 1 DSM 359 DRM 255 AL0 0C0H AL1 0 OFS 0
+END
+
+# REH2  REH CPU280  9x1024 - HD 96 tpi 5.25" - 1024 x 9
+diskdef REH2
+  seclen 1024
+  tracks 160
+  sectrk 9
+  blocksize 4096
+  maxdir 256
+  skew 2
+  os 2.2
+end
+
+# libdsk
+[REH2]
+description = REH2  REH CPU280  9x1024 - HD 96 tpi 5.25" - 1024 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 9
+secbase = 1
+datarate = HD
+
+# flashfloppy/GOTEK
+[REh2]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN REH3  REH CPU280 11x1024 - HD 135 tpi 3.5" - 1024 x 11
+DENSITY MFM HIGH
+CYLINDERS 80 SIDES 2 SECTORS 11 1024 SKEW 2
+SIDE1 0 1,3,5,7,9,11,2,4,6,8,10
+SIDE2 1 1,3,5,7,9,11,2,4,6,8,10
+ORDER SIDES
+BSH 5 BLM 31 EXM 1 DSM 439 DRM 255 AL0 0C0H AL1 0 OFS 0
+END
+
+# REH3  REH CPU280 11x1024 - HD 135 tpi 3.5" - 1024 x 11
+diskdef REH3
+  seclen 1024
+  tracks 160
+  sectrk 11
+  blocksize 4096
+  maxdir 256
+  skew 2
+  os 2.2
+end
+
+# libdsk
+[REH3]
+description = REH3  REH CPU280 11x1024 - HD 135 tpi 3.5" - 1024 x 11
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 11
+secbase = 1
+datarate = HD
+
+# flashfloppy/GOTEK
+[REH3]
+cyls = 160
+heads = 2
+secs = 11
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN REH4  REH CPU280 11x1024 - HD 135 tpi 3.5" - 1024 x 11
+DENSITY MFM HIGH
+CYLINDERS 80 SIDES 2 SECTORS 11 1024
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11
+SIDE2 1 1,2,3,4,5,6,7,8,9,10,11
+ORDER SIDES
+BSH 5 BLM 31 EXM 1 DSM 439 DRM 255 AL0 0C0H AL1 0 OFS 1
+END
+#NOTE   Robotron Formate 780K  und 800K
+
+# REH4  REH CPU280 11x1024 - HD 135 tpi 3.5" - 1024 x 11
+diskdef REH4
+  seclen 1024
+  tracks 160
+  sectrk 11
+  blocksize 4096
+  maxdir 256
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[REH4]
+description = REH4  REH CPU280 11x1024 - HD 135 tpi 3.5" - 1024 x 11
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 11
+secbase = 1
+datarate = HD
+
+# flashfloppy/GOTEK
+[REH4]
+cyls = 160
+heads = 2
+secs = 11
+interleave = 1
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN R780 PC1715 SCP   (80*2* 5,1024 4 OFS 4k DIR)   5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 389 DRM 127 AL0 192 AL1 0 OFS 4
+END
+
+# R780 PC1715 SCP   (80*2* 5,1024 4 OFS 4k DIR)   5.25" - 1024 x 5
+diskdef R780
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[R780]
+description = R780 PC1715 SCP   (80*2* 5,1024 4 OFS 4k DIR)   5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[R780]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN R800 PC1715 CPA   (80*2* 5,1024 0 OFS 6k DIR)   5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 399 DRM 191 AL0 224 AL1 0 OFS 0
+END
+
+# R800 PC1715 CPA   (80*2* 5,1024 0 OFS 6k DIR)   5.25" - 1024 x 5
+diskdef R800
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 192
+  skew 1
+  os 2.2
+end
+
+# libdsk
+[R800]
+description = R800 PC1715 CPA   (80*2* 5,1024 0 OFS 6k DIR)   5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[R800]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN ROY2  Royal Alphatronic P2 - SSDD 48 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 16 256
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+BSH 3 BLM 7 EXM 0 DSM 151 DRM 64 AL0 0C0H AL1 0 OFS 2
+END
+
+# ROY2  Royal Alphatronic P2 - SSDD 48 tpi 5.25" - 256 x 16
+diskdef ROY2
+  seclen 256
+  tracks 40
+  sectrk 16
+  blocksize 1024
+  maxdir 65
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[ROY2]
+description = ROY2  Royal Alphatronic P2 - SSDD 48 tpi 5.25" - 256 x 16
+cylinders = 40
+heads = 1
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[ROY2]
+cyls = 40
+heads = 1
+secs = 16
+interleave = 1
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN ROY3  Royal Alphatronic P3 - DSDD 96 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024
+SIDE1 0 1,2,3,4,5
+SIDE2 1 1,2,3,4,5
+BSH 4 BLM 15 EXM 0 DSM 396 DRM 192 AL0 0C0H AL1 0 OFS 1
+END
+
+# ROY3  Royal Alphatronic P3 - DSDD 96 tpi 5.25" - 1024 x 5
+diskdef ROY3
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 193
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[ROY3]
+description = ROY3  Royal Alphatronic P3 - DSDD 96 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[ROY3]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 1
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SAN2  Sanyo  MBC-1250 - DSDD 96 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 16 256
+SIDE1 0 1,4,7,10,13,16,3,6,9,12,15,2,5,8,11,14
+SIDE2 1 1,4,7,10,13,16,3,6,9,12,15,2,5,8,11,14
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 155 DRM 127 AL1 080H AL1 0 OFS 4
+END
+
+# SAN2  Sanyo  MBC-1250 - DSDD 96 tpi 5.25" - 256 x 16
+diskdef SAN2
+  seclen 256
+  tracks 160
+  sectrk 16
+  blocksize 4096
+  maxdir 128
+  skew 3
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[SAN2]
+description = SAN2  Sanyo  MBC-1250 - DSDD 96 tpi 5.25" - 256 x 16
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SAN2]
+cyls = 160
+heads = 2
+secs = 16
+interleave = 3
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SCP1  Robotron SCP 16*256 - DSDD 96 tpi 5.25" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 16 256
+SIDE1 0 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+SIDE2 1 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+ORDER CYLINDERS 
+BSH 4 BLM 15 EXM 3 DSM 157 DRM 127 AL0 080H AL1 0 OFS 2
+END
+
+# SCP1  Robotron SCP 16*256 - DSDD 96 tpi 5.25" - 256 x 16
+diskdef SCP1
+  seclen 256
+  tracks 160
+  sectrk 16
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[SCP1]
+description = SCP1  Robotron SCP 16*256 - DSDD 96 tpi 5.25" - 256 x 16
+sides = outback
+cylinders = 160
+heads = 2
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SCP1]
+cyls = 160
+heads = 2
+secs = 16
+interleave = 1
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SHA2  Sharp MZ-800 DSDD 48 tpi 5.25" - 512 x 8
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 8 512
+SIDE1 0 1,2,3,4,5,6,7,8
+SIDE2 1 1,2,3,4,5,6,7,8
+ORDER CYLINDERS
+BSH 4 BLM 15 EXM 1 DSM 157 DRM 63  AL0 0C0H AL1 0 OFS 1
+END
+
+# SHA2  Sharp MZ-800 DSDD 48 tpi 5.25" - 512 x 8
+diskdef SHA2
+  seclen 512
+  tracks 80
+  sectrk 8
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 1
+  os 2.2
+end
+
+# libdsk
+[SHA2]
+description = SHA2  Sharp MZ-800 DSDD 48 tpi 5.25" - 512 x 8
+sides = outback
+cylinders = 80
+heads = 2
+secsize = 512
+sectors = 8
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SHA2]
+cyls = 80
+heads = 2
+secs = 8
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SHA3  Sharp MZ3500 EOS DSDD 48 tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 16 1,3,5,2,4
+SIDE2 17 1,3,5,2,4
+ORDER SIDES
+BSH 4 BLM 15 EXM 1 DSM 193 DRM 127 AL0 0F0H AL1 0 OFS 2
+END
+
+# SHA3  Sharp MZ3500 EOS DSDD 48 tpi 5.25" - 1024 x 5
+diskdef SHA3
+  seclen 1024
+  tracks 80
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 2
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[SHA3]
+description = SHA3  Sharp MZ3500 EOS DSDD 48 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SHA3]
+cyls = 80
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SHA4  Sharp MZ5600 EOS 16 DSDD 96tpi 5.25" - 1024 x 5
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 16 1,2,3,4,5
+SIDE2 17 1,2,3,4,5
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 169 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# SHA4  Sharp MZ5600 EOS 16 DSDD 96tpi 5.25" - 1024 x 5
+diskdef SHA4
+  seclen 1024
+  tracks 160
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[SHA4]
+description = SHA4  Sharp MZ5600 EOS 16 DSDD 96tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SHA4]
+cyls = 160
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SHA5  Sharp MZ3500 EOS DSDD 48 tpi 5.25" - 1024 x 5!
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 2 SECTORS 5 1024 SKEW 2
+SIDE1 16 1,3,5,2,4
+SIDE2 17 1,3,5,2,4
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 193 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# SHA5  Sharp MZ3500 EOS DSDD 48 tpi 5.25" - 1024 x 5
+diskdef SHA5
+  seclen 1024
+  tracks 80
+  sectrk 5
+  blocksize 2048
+  maxdir 128
+  skew 2
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[SHA5]
+description = SHA5  Sharp MZ3500 EOS DSDD 48 tpi 5.25" - 1024 x 5
+sides = alt
+cylinders = 80
+heads = 2
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SHA5]
+cyls = 80
+heads = 2
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SHA6  Sharp MZ-800 SDS / 768 DSDD 96 tpi 5.25" - 512 x 10
+DENSITY MFM LOW COMPLEMENT
+CYLINDERS 80 SIDES 2 SECTORS 10 512
+SIDE1 1 1,2,3,4,5,6,7,8,9,10
+SIDE2 0 1,2,3,4,5,6,7,8,9,10
+ORDER SIDES
+BSH 5 BLM 31 EXM 3 DSM 193 DRM 127 AL0 0C0H AL1 0 OFS 1
+END
+
+# SHA6  Sharp MZ-800 SDS / 768 DSDD 96 tpi 5.25" - 512 x 10
+diskdef SHA6
+  seclen 512
+  tracks 160
+  sectrk 10
+  blocksize 4096
+  maxdir 128
+  skew 1
+  boottrk 1
+# data should be complmented
+# libdsk doesn't do that yet
+  os 2.2
+end
+
+# libdsk
+[SHA6]
+description = SHA6  Sharp MZ-800 SDS / 768 DSDD 96 tpi 5.25" - 512 x 10
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SHA6]
+cyls = 160
+heads = 2
+secs = 10
+interleave = 1
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SIE4  Siemens MX 2 (LOC C 25-Format) - DSDD 96 tpi 3.5" - 256 x 16
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 16 256
+SIDE1 0 1,3,5,7,9,11,13,15,2,4,6,8,10,12,14,16
+SIDE2 1 1,3,5,7,9,11,13,15,2,4,6,8,10,12,14,16
+ORDER SIDES
+BSH 4 BLM 15 EXM 1 DSM 192 DRM 127 AL0 0C0H AL1 0 OFS 4
+END
+
+# SIE4  Siemens MX 2 (LOC C 25-Format) - DSDD 96 tpi 3.5" - 256 x 16
+diskdef SIE4
+  seclen 256
+  tracks 160
+  sectrk 16
+  blocksize 2048
+  maxdir 128
+  skew 2
+  boottrk 4
+  os 2.2
+end
+
+# libdsk
+[SIE4]
+description = SIE4  Siemens MX 2 (LOC C 25-Format) - DSDD 96 tpi 3.5" - 256 x 16
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 256
+sectors = 16
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SIE4]
+cyls = 160
+heads = 2
+secs = 16
+interleave = 2
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SPV1  Spectravideo SV - SSDD 48 tpi 5.25" - 256 x 17
+DENSITY MFM LOW
+CYLINDERS 40 SIDES 1 SECTORS 17 256 SKEW 2
+SIDE1 1 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17
+BSH 3 BLM 7 EXM 0 DSM 162 DRM 63 AL0 0C0H AL1 0 OFS 3
+END
+
+# SPV1  Spectravideo SV - SSDD 48 tpi 5.25" - 256 x 17
+diskdef SPV1
+  seclen 256
+  tracks 40
+  sectrk 17
+  blocksize 1024
+  maxdir 64
+  skew 1
+  boottrk 3
+  os 2.2
+end
+
+# libdsk
+[SPV1]
+description = SPV1  Spectravideo SV - SSDD 48 tpi 5.25" - 256 x 17
+cylinders = 40
+heads = 1
+secsize = 256
+sectors = 17
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SPV1]
+cyls = 40
+heads = 1
+secs = 17
+interleave = 2
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN SPV2  Spectravideo SV - SSDD 96 tpi 3.5" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512 SKEW 5
+SIDE1 0 1,2,3,4,5,6,7,8,9
+BSH 4 BLM 15 EXM 1 DSM 172 DRM 63 AL0 080H AL1 0 OFS 3
+END
+
+# SPV2  Spectravideo SV - SSDD 96 tpi 3.5" - 512 x 9
+diskdef SPV2
+  seclen 512
+  tracks 80
+  sectrk 9
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 3
+  os 2.2
+end
+
+# libdsk
+[SPV2]
+description = SPV2  Spectravideo SV - SSDD 96 tpi 3.5" - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[SPV2]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 5
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN TAT1  Tatung  - SSDD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 1 SECTORS 9 512
+SIDE1 0 0,1,2,3,4,5,6,7,8
+BSH 4 BLM 15 EXM 0 DSM 170 DRM 63 AL0 0C0H AL1 0 OFS 2
+END
+
+# TAT1  Tatung  - SSDD 96 tpi 5.25" - 512 x 9
+diskdef TAT1
+  seclen 512
+  tracks 80
+  sectrk 9
+  secbase 0
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[TAT1]
+description = TAT1  Tatung  - SSDD 96 tpi 5.25" - 512 x 9
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 9
+secbase = 0
+datarate = DD
+
+# flashfloppy/GOTEK
+[ADx20]
+cyls = 80
+heads = 1
+secs = 9
+interleave = 1
+bps = 512
+id = 0
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN TEL4  Televideo 1603 - DSDD 96 tpi 5.25" - 512 x 9
+DENSITY MFM LOW
+CYLINDERS 80 SIDES 2 SECTORS 9 512 SKEW 3
+SIDE1 0 1,2,3,4,5,6,7,8,9
+SIDE2 1 1,2,3,4,5,6,7,8,9
+ORDER SIDES
+BSH 4 BLM 15 EXM 0 DSM 354 DRM 127 AL0 0C0H AL1 0 OFS 2
+END
+
+# TEL4  Televideo 1603 - DSDD 96 tpi 5.25" - 512 x 9
+diskdef TEL4
+  seclen 512
+  tracks 160
+  sectrk 9
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 2
+  os 2.2
+end
+
+# libdsk
+[TEL4]
+description = TEL4  Televideo 1603 - DSDD 96 tpi 5.25" - 512 x 9
+sides = alt
+cylinders = 160
+heads = 2
+secsize = 512
+sectors = 9
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[TEL4]
+cyls = 160
+heads = 2
+secs = 9
+interleave = 3
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN TEL5  Teletek Systemaster - DSDD 35-track 48 tpi 5.25" - 256 x 18
+DENSITY MFM LOW
+CYLINDERS 35 SIDES 2 SECTORS 18 256
+SIDE1 0 1,7,13,2,8,14,3,9,15,4,10,16,5,11,17,6,12,18
+SIDE2 1 1,7,13,2,8,14,3,9,15,4,10,16,5,11,17,6,12,18
+ORDER EAGLE
+BSH 4 BLM 15 EXM 1 DSM 150 DRM 127 AL0 0C0H AL1 0 OFS 3
+END
+
+# TEL5  Teletek Systemaster - DSDD 35-track 48 tpi 5.25" - 256 x 18
+diskdef TEL5
+  seclen 256
+  tracks 70
+  sectrk 18
+  blocksize 2048
+  maxdir 128
+  skew 6
+  boottrk 3
+  os 2.2
+end
+
+# libdsk
+[TEL5]
+description = TEL5  Teletek Systemaster - DSDD 35-track 48 tpi 5.25" - 256 x 18
+sides = eagle
+cylinders = 70
+heads = 2
+secsize = 256
+sectors = 18
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[TEL5]
+cyls = 70
+heads = 2
+secs = 18
+interleave = 6
+bps = 256
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+/* Not in 22DISK */
+BEGIN ZDOS  ZDOS 80 track - SSDD 96 tpi 3.5" - 512 x 10
+DENSITY MFM LOW COMPLEMENT 
+CYLINDERS 80 SIDES 1 SECTORS 10 512
+SIDE1 0 1,3,5,7,9,2,4,6,8,10
+BSH 4 BLM 15 EXM 1 DSM 94 DRM 63 AL0 080H AL1 0 OFS 2
+END
+
+# ZDOS  ZDOS 80 track - SSDD 96 tpi 3.5" - 512 x 10
+diskdef ZDOS
+  seclen 512
+  tracks 80
+  sectrk 10
+  blocksize 2048
+  maxdir 64
+  skew 2
+  boottrk 2
+# data should be complmented
+# libdsk doesn't do that yet
+  os 2.2
+end
+
+# libdsk
+[ZDOS]
+description = ZDOS  ZDOS 80 track - SSDD 96 tpi 3.5" - 512 x 10
+cylinders = 80
+heads = 1
+secsize = 512
+sectors = 10
+secbase = 1
+datarate = DD
+
+# flashfloppy/GOTEK
+[ZDOS]
+cyls = 80
+heads = 1
+secs = 10
+interleave = 2
+bps = 512
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
+
+
