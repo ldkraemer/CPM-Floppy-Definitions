@@ -20136,6 +20136,7 @@ diskdef trsy
   os 2.2
 end
 
+# libdsk
 [trsy]
 description = TRSY  TRS-80 Model II, FMG - SSDD 8" - 256 x 26
 cylinders = 77
