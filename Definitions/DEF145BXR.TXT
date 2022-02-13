@@ -8534,6 +8534,7 @@ diskdef ibm3
   skew 1
   offset 512
   os 2.2
+  boottrk 1
 end
 
 # libdsk
@@ -9079,6 +9080,7 @@ diskdef ims7
   maxdir 192
   skew 1
   os 2.2
+  boottrk 1
 end
 
 #libdsk
@@ -15176,8 +15178,8 @@ diskdef qdp1
   os 2.2
 end
 
-# libdsk
 #ORDER CYLINDERS
+# libdsk
 [qdp1]
 description = QDP1  QDP-500 - DSHD 96 tpi 5.25" - 1024 x 8
 sides = outback
@@ -15216,6 +15218,7 @@ diskdef qdp2
   os 2.2
 end
 
+# libdsk
 [qdp2]
 description = QDP2  QDP-100 - SSSD 8" - 256 x 26
 cylinders = 77
@@ -15294,6 +15297,7 @@ diskdef rc70
   os 2.2
 end
 
+# libdsk
 [rc70]
 description = RC70 PICCOLO RC702 - DSDD 48 TPI 5.25" - 512 x 9
 sides = outback
@@ -15333,6 +15337,7 @@ diskdef rc71
   os 2.2
 end
 
+# libdsk
 [rc71]
 description = RC71 PICCOLO RC702 - DSDD 48 TPI 5.25"  - 512 x 9
 sides = outback
@@ -15371,6 +15376,7 @@ diskdef rc72
   os 2.2
 end
 
+# libdsk
 [rc72]
 description = RC72 PICCOLO RC702 -- DSDD 8" - 512 x 15
 sides = outback
@@ -16109,6 +16115,7 @@ diskdef sds5
   os 2.2
 end
 
+# libdsk
 [sds5]
 description = SDS5  S.D. Systems, double-sided - DSHD 8" - 256 x 26
 sides = alt
@@ -20205,6 +20212,7 @@ diskdef unk1
   os 2.2
 end
 
+# libdsk
 [unk1]
 description = UNK1  Unknown (temporary) - DSHD 3.5" - 1024 x 9
 sides = alt
@@ -20400,6 +20408,7 @@ diskdef wal1
   os 2.2
 end
 
+# libdsk
 [wal1]
 description = WAL1  Walter Grinder GC-6 - SSDD 96 tpi 5.25" - 256 x 16
 cylinders = 80
