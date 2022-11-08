@@ -12167,6 +12167,44 @@ rate = 250
 mode = mfm
 iam = no
 
+SYSTEM NAB1  Nabu PC - SSDD 5.25" 48 tpi - 1024 x 5
+
+# NAB1  Nabu PC - SSDD 5.25" 48 tpi - 1024 x 5
+diskdef nab1
+  seclen 1024
+  tracks 40
+  sectrk 5
+  blocksize 1024
+  maxdir 96
+  skew 2
+  boottrk 1
+  os 2.2
+end
+
+#libdsk Definition
+[nab1]
+description = NAB1  Nabu PC - SSDD 5.25" 48 tpi - 1024 x 5
+cylinders = 40
+heads = 1
+secsize = 1024
+sectors = 5
+secbase = 1
+datarate = DD
+
+#Flashfloppy/GOTEK Definition
+[nab1]
+cyls = 40
+heads = 1
+secs = 5
+interleave = 2
+bps = 1024
+id = 1
+#rpm = 360
+rpm = 300
+rate = 250
+mode = mfm
+iam = no
+
 SYSTEM NAS1  Nascom 3 - SSDD 96 tpi 5.25" - 512 x 10
 
 # NAS1  Nascom 3 - SSDD 96 tpi 5.25" - 512 x 10
