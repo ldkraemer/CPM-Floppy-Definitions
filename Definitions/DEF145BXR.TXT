@@ -253,7 +253,7 @@ heads = 2
 secs = 10
 interleave = 1
 bps = 256
-id = 1
+id = 0
 #rpm = 360
 rpm = 300
 rate = 125
@@ -6629,7 +6629,7 @@ secbase = 1
 datarate = DD
 
 # flashfloppy/GOTEK
-[esp4]
+[eps4]
 cyls = 160
 heads = 2
 secs = 16
@@ -6668,7 +6668,7 @@ secbase = 1
 datarate = DD
 
 # flashfloppy/GOTEK
-[esp5]
+[eps5]
 cyls = 160
 heads = 2
 secs = 10
@@ -7730,7 +7730,7 @@ datarate = ED
 # flashfloppy/GOTEK
 [gra1]
 cyls = 154
-heads = 1
+heads = 2
 secs = 26
 interleave = 1
 bps = 256
@@ -9652,7 +9652,6 @@ iam = no
 
 SYSTEM JR01  Junior 80 - DSDD 48 tpi 5.25" - 512 x 9
 
-
 # JR01  Junior 80 - DSDD 48 tpi 5.25" - 512 x 9
 diskdef jr01
   seclen 512
@@ -9683,7 +9682,7 @@ heads = 2
 secs = 9
 interleave = 2
 bps = 512
-id = 0
+id = 1
 #rpm = 360
 rpm = 300
 rate = 250
@@ -9721,7 +9720,7 @@ heads = 1
 secs = 18
 interleave = 5
 bps = 128
-id = 0
+id = 1
 #rpm = 360
 rpm = 300
 rate = 125
@@ -11885,7 +11884,7 @@ cyls = 80
 heads = 2
 secs = 4
 interleave = 1
-bps = 21024
+bps = 1024
 id = 1
 #rpm = 360
 rpm = 300
@@ -13827,7 +13826,7 @@ cyls = 80
 heads = 2
 secs = 5
 interleave = 1
-bps = 1025
+bps = 1024
 id = 1
 #rpm = 360
 rpm = 300
@@ -13981,7 +13980,7 @@ datarate = DD
 
 # flashfloppy/GOTEK
 [osb8]
-cyls = 7780
+cyls = 80
 heads = 2
 secs = 5
 interleave = 2
@@ -14217,7 +14216,7 @@ datarate = DD
 [otr1]
 cyls = 80
 heads = 2
-secs = 1
+secs = 10
 interleave = 1
 bps = 512
 id = 1
