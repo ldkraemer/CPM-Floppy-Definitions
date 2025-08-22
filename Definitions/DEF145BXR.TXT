@@ -912,7 +912,7 @@ datarate = HD
 cyls = 77
 heads = 1
 secs = 26
-interleave = 6
+interleave = 1
 bps = 128
 id = 1
 rpm = 360
@@ -951,7 +951,7 @@ datarate = HD
 cyls = 154
 heads = 2
 secs = 26
-interleave = 6
+interleave = 1
 bps = 128
 id = 1
 rpm = 360
@@ -2846,6 +2846,7 @@ diskdef big4
   sectrk 9
   blocksize 2048
   maxdir 128
+  datarate ED
   skew 1
   boottrk 2
   os 2.2
@@ -2876,7 +2877,7 @@ mode = mfm
 iam = no
 
 SYSTEM BIG5  Big Board 16/512 byte sectors - SSDD 8" - 512 x 16
-  
+
 # BIG5  Big Board 16/512 byte sectors - SSDD 8" - 512 x 16
 diskdef big5
   seclen 512
@@ -2914,8 +2915,6 @@ mode = mfm
 iam = no
 
 SYSTEM BIG6  Big Board - SSDD 8" - 1024 x 8
-INSERT 22DISK DEFINITION HERE
-END 
 
 # BIG6  Big Board - SSDD 8" - 1024 x 8
 diskdef big6
@@ -5039,7 +5038,7 @@ bps = 512
 id = 1
 #rpm = 360
 rpm = 300
-rate = 500
+rate = 250
 mode = mfm
 iam = no
 
@@ -6174,7 +6173,6 @@ iam = no
 
 SYSTEM DSXD  Strange  - DSHD 8" - 1024 x 9
 
-
 # DSXD  Strange  - DSHD 8" - 1024 x 9
 diskdef dsxd
   seclen 1024
@@ -6186,7 +6184,7 @@ diskdef dsxd
   boottrk 4
   os 2.2
 end
- 
+
 # libdsk
 [dsxd]
 description = DSXD  Strange  - DSHD 8" - 1024 x 9
@@ -8881,6 +8879,7 @@ SYSTEM IMS2  IMS 5000 TurboDOS - DSDD 96 tpi 5.25" - 1024 x 5
 diskdef ims2
   seclen 1024
   tracks 160
+  sides alt
   sectrk 5
   blocksize 2048
   maxdir 128
@@ -8948,7 +8947,7 @@ bps = 1024
 id = 1
 rpm = 360
 #rpm = 300
-rate = 250
+rate = 500
 mode = mfm
 iam = no
 
@@ -9079,8 +9078,8 @@ diskdef ims7
   blocksize 2048
   maxdir 192
   skew 1
-  os 2.2
   boottrk 1
+  os 2.2
 end
 
 #libdsk
@@ -9143,7 +9142,7 @@ bps = 256
 id = 1
 #rpm = 360
 rpm = 300
-rate = 500
+rate = 250
 mode = mfm
 iam = no
 
@@ -12548,7 +12547,7 @@ bps = 256
 id = 1
 #rpm = 360
 rpm = 300
-rate = 500
+rate = 250
 mode = mfm
 iam = no
 
@@ -14194,8 +14193,10 @@ diskdef otr1
   seclen 512
   tracks 80
   sectrk 10
+  sides outout
   blocksize 2048
   maxdir 128
+  datarate DD
   skew 1
   boottrk 3
   os 2.2
@@ -14204,7 +14205,7 @@ end
 # libdsk
 [otr1]
 description = OTR1  Otrona Attache - DSDD 48 tpi 5.25" - 512 x 10
-sides = eagle
+sides = outout
 cylinders = 80
 heads = 2
 secsize = 512
@@ -14233,8 +14234,10 @@ diskdef otr2
   seclen 512
   tracks 160
   sectrk 10
+  sides outback
   blocksize 2048
   maxdir 128
+  datarate DD
   skew 1
   boottrk 3
   os 2.2
@@ -14270,14 +14273,14 @@ SYSTEM P112 SBC - CP/M 2&3 - DSHD 3.5" - 96 TPI 512 x 18
 
 #P112 SBC - CP/M 2&3 - DSHD 3.5" - 96 TPI 512 x 18
 diskdef p112
-seclen 512
-tracks 160
-sectrk 18
-blocksize 2048
-maxdir 256
-skew 1
-boottrk 2
-os 3
+  seclen 512
+  tracks 160
+  sectrk 18
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 2
+  os 3
 end
 
 # libdsk
@@ -14309,14 +14312,14 @@ SYSTEM P110 SBC-old - CP/M 2&3 - DSHD 3.5" - 96 TPI 512 x 18
 
 #P110 SBC-old - CP/M 2&3 - DSHD 3.5" - 96 TPI 512 x 18
 diskdef p110
-seclen 512
-tracks 160
-sectrk 18
-blocksize 2048
-maxdir 128
-skew 1
-boottrk 1
-os 3
+  seclen 512
+  tracks 160
+  sectrk 18
+  blocksize 2048
+  maxdir 128
+  skew 1
+  boottrk 1
+  os 3
 end
 
 # libdsk
@@ -14348,14 +14351,14 @@ SYSTEM P111 SBC - CP/M 2&3 - DSDD 5.25" - 48 TPI 512 x 18
 
 #P111 SBC - CP/M 2&3 - DSDD 5.25" - 48 TPI 512 x 18
 diskdef p111
-seclen 512
-tracks 80
-sectrk 18
-blocksize 2048
-maxdir 64
-skew 1
-boottrk 1
-os 3
+  seclen 512
+  tracks 80
+  sectrk 18
+  blocksize 2048
+  maxdir 64
+  skew 1
+  boottrk 1
+  os 3
 end
 
 # libdsk
@@ -14387,14 +14390,14 @@ SYSTEM P113 SBC - CP/M 2&3 - DSQD 3.5" BP - 96 TPI 1024 x 11
 
 #P113  SBC - CP/M 2&3 - DSQD 3.5" BP - 96 TPI 1024 x 11
 diskdef p113
-seclen 1024
-tracks 160
-sectrk 11
-blocksize 2048
-maxdir 256
-skew 1
-boottrk 1
-os 3
+  seclen 1024
+  tracks 160
+  sectrk 11
+  blocksize 2048
+  maxdir 256
+  skew 1
+  boottrk 1
+  os 3
 end
 
 # libdsk
@@ -17009,7 +17012,7 @@ bps = 512
 id = 1
 #rpm = 360
 rpm = 300
-rate = 500
+rate = 250
 mode = mfm
 iam = no
 
@@ -20876,7 +20879,7 @@ end
 # libdsk
 [xer4]
 description = XER4  Xerox 820-II, 16/8 - DSDD 48 tpi 5.25" - 256 x 17
-sides = eagle
+sides = outout
 cylinders = 80
 heads = 2
 secsize = 256
